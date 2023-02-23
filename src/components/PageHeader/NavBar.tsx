@@ -18,11 +18,15 @@ export const NavBar: React.FunctionComponent<Props> = ({
 				style={{ display: "block" }}
 			>
 				<button
-					className={styles["menu-icon"]}
+					className={styles["menu-button"]}
 					type="button"
 					data-toggle="gcn-menu"
 					onClick={toggleMenu}
-				/>
+				>
+					<span
+						className={isMenuOpen ? styles["back-icon"] : styles["menu-icon"]}
+					/>
+				</button>
 			</div>
 			<div className="columns shrink social-links--header-m">
 				<ul className="social-links">
