@@ -1,8 +1,9 @@
 import { useState } from "react";
 
+import { NavMenu } from "src/components/NavMenu";
+
 import { Banner } from "./Banner";
 import { NavBar } from "./NavBar";
-import { NavMenu } from "./NavMenu";
 
 export const PageHeader: React.FunctionComponent = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
