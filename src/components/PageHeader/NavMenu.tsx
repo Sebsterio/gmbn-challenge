@@ -1,9 +1,20 @@
-export const NavMenu: React.FunctionComponent = () => {
+type Props = {
+	isMenuOpen: boolean;
+};
+
+export const NavMenu: React.FunctionComponent<Props> = ({
+	isMenuOpen,
+	// setIsMenuOpen,
+}) => {
 	return (
 		<div className="nav__sub-nav">
 			<div className="row align-middle">
 				<div className="columns">
-					<div className="top-bar" id="gcn-menu" style={{ display: "none" }}>
+					<div
+						className="top-bar"
+						id="gcn-menu"
+						style={{ display: isMenuOpen ? "flex" : "none" }}
+					>
 						<div className="top-bar-left">
 							<ul
 								className="dropdown menu"
@@ -14,6 +25,7 @@ export const NavMenu: React.FunctionComponent = () => {
 									className="dropdown__list dropdown__list--home"
 									role="menuitem"
 								>
+									{/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
 									<a className="dropdown__list__item" href="/">
 										Home
 									</a>

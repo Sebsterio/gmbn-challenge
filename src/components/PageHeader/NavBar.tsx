@@ -1,4 +1,12 @@
-export const NavBar: React.FunctionComponent = () => {
+type Props = {
+	isMenuOpen: boolean;
+	toggleMenu: () => void;
+};
+
+export const NavBar: React.FunctionComponent<Props> = ({
+	isMenuOpen,
+	toggleMenu,
+}) => {
 	return (
 		<div className="row">
 			<div
@@ -7,7 +15,12 @@ export const NavBar: React.FunctionComponent = () => {
 				data-hide-for="large"
 				style={{ display: "block" }}
 			>
-				<button className="menu-icon" type="button" data-toggle="gcn-menu" />
+				<button
+					className="menu-icon"
+					type="button"
+					data-toggle="gcn-menu"
+					onClick={toggleMenu}
+				/>
 			</div>
 			<div className="columns shrink social-links--header-m">
 				<ul className="social-links">
