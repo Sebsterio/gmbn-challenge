@@ -5792,7 +5792,7 @@ select[multiple] {
 	display: none;
 }
 
-.menu-icon {
+/* .menu-icon {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
@@ -5842,7 +5842,7 @@ select[multiple] {
 .menu-icon.dark:hover::after {
 	background: #8a8a8a;
 	box-shadow: 0 7px 0 #8a8a8a, 0 14px 0 #8a8a8a;
-}
+} */
 
 .is-drilldown {
 	position: relative;

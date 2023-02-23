@@ -1,3 +1,5 @@
+import styles from "./NavBar.module.css";
+
 type Props = {
 	isMenuOpen: boolean;
 	toggleMenu: () => void;
@@ -16,7 +18,7 @@ export const NavBar: React.FunctionComponent<Props> = ({
 				style={{ display: "block" }}
 			>
 				<button
-					className="menu-icon"
+					className={styles["menu-icon"]}
 					type="button"
 					data-toggle="gcn-menu"
 					onClick={toggleMenu}
