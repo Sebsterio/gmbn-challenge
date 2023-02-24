@@ -2,13 +2,13 @@
 
 ### Implemented features
 
-- toggleable search-bar; visibility mutually-exclusive with mav-menu
-- "fixed" position of nav-menu and search-bar, implemented with pure CSS (no DOM lookup of header height for correct positioning of overlay)
+- toggleable search-bar; active state mutually exclusive with nav-menu's
+- "fixed" position of nav-menu and search-bar, implemented with pure CSS (no DOM lookup of header height for correct positioning of overlays)
 - dynamic UI state of menu buttons (open/closed)
 
 ### Not implemented features
 
-- nav-menu accordeon layout for sub-menus
+- nav-menu accordion layout for sub-menus
 - nav-menu and search-bar slide-in/out transition on toggle
 
 # Instructions
