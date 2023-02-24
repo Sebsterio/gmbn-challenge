@@ -11,7 +11,7 @@ export const PageHeader: React.FunctionComponent<Props> = ({
 	toggleMenu,
 }) => {
 	return (
-		<header>
+		<header className="header">
 			<Banner />
 			<NavBar {...{ isMenuOpen, toggleMenu }} />
 		</header>

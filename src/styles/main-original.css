@@ -8884,15 +8884,15 @@ ul.full-archive .full-archive__list__item__link:visited {
 	text-decoration: underline;
 }
 
-header {
+.header {
 	background-color: #000;
 }
 
-header a {
+.header a {
 	color: #fff;
 }
 
-header .navbar-brand {
+.header .navbar-brand {
 	padding: 0px 0px 0px 4px;
 	padding: calculate-rem(0) rem calculate-rem(0) rem calculate-rem(0) rem
 		calculate-rem(4) rem;
@@ -8902,19 +8902,19 @@ header .navbar-brand {
 	align-items: center;
 }
 
-header .navbar-brand .mainLogoMobile {
+.header .navbar-brand .mainLogoMobile {
 	padding: 16px 0px;
 	padding: calculate-rem(16) rem calculate-rem(0) rem;
 	max-width: 100%;
 }
 
 @media print, screen and (min-width: 40em) {
-	header .navbar-brand .mainLogoMobile {
+	.header .navbar-brand .mainLogoMobile {
 		display: none;
 	}
 }
 
-header .navbar-brand .mainLogoDesktop {
+.header .navbar-brand .mainLogoDesktop {
 	display: none;
 	margin: 12px 0px;
 	margin: calculate-rem(12) rem calculate-rem(0) rem;
@@ -8923,12 +8923,12 @@ header .navbar-brand .mainLogoDesktop {
 }
 
 @media print, screen and (min-width: 40em) {
-	header .navbar-brand .mainLogoDesktop {
+	.header .navbar-brand .mainLogoDesktop {
 		display: block;
 	}
 }
 
-header .prim-nav {
+.header .prim-nav {
 	padding: 0px 2px 0px 0px;
 	padding: calculate-rem(0) rem calculate-rem(2) rem calculate-rem(0) rem
 		calculate-rem(0) rem;
@@ -8939,14 +8939,14 @@ header .prim-nav {
 }
 
 @media print, screen and (min-width: 40em) {
-	header .prim-nav {
+	.header .prim-nav {
 		padding: 0px 12px 0px 0px;
 		padding: calculate-rem(0) rem calculate-rem(12) rem calculate-rem(0) rem
 			calculate-rem(0) rem;
 	}
 }
 
-header .prim-nav a.prim-nav__btn {
+.header .prim-nav a.prim-nav__btn {
 	padding: 0px 6px;
 	padding: calculate-rem(0) rem calculate-rem(6) rem;
 	margin: 0px 0px 0px 4px;
@@ -8964,7 +8964,7 @@ header .prim-nav a.prim-nav__btn {
 }
 
 @media print, screen and (min-width: 40em) {
-	header .prim-nav a.prim-nav__btn {
+	.header .prim-nav a.prim-nav__btn {
 		padding: 0px 8px;
 		padding: calculate-rem(0) rem calculate-rem(8) rem;
 		margin: 0px 0px 0px 12px;
@@ -8974,7 +8974,7 @@ header .prim-nav a.prim-nav__btn {
 	}
 }
 
-header .prim-nav a.prim-nav__btn p {
+.header .prim-nav a.prim-nav__btn p {
 	margin: 0px;
 	margin: calculate-rem(0) rem;
 	padding: 0px 0px 0px 4px;
@@ -8986,56 +8986,56 @@ header .prim-nav a.prim-nav__btn p {
 	font-weight: 700;
 }
 
-header .prim-nav a.prim-nav__btn img.prim-nav__btn--subscribe {
+.header .prim-nav a.prim-nav__btn img.prim-nav__btn--subscribe {
 	width: 44px;
 }
 
-header .prim-nav a.prim-nav__btn img.prim-nav__btn--shop {
+.header .prim-nav a.prim-nav__btn img.prim-nav__btn--shop {
 	width: 50px;
 }
 
-header .prim-nav a.prim-nav__btn:focus,
-header .prim-nav a.prim-nav__btn:hover {
+.header .prim-nav a.prim-nav__btn:focus,
+.header .prim-nav a.prim-nav__btn:hover {
 	color: #d91225;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-header .title-bar {
+.header .title-bar {
 	display: none;
 	background-color: #d91225;
 }
 
-header .nav__sub-nav {
+.header .nav__sub-nav {
 	z-index: 200;
 }
 
 @media print, screen and (min-width: 64em) {
-	header .nav__sub-nav {
+	.header .nav__sub-nav {
 		background-color: #d91225;
 	}
 }
 
-header .nav__sub-nav a {
+.header .nav__sub-nav a {
 	color: #fff;
 }
 
 @media print, screen and (min-width: 64em) {
-	header .nav__sub-nav a {
+	.header .nav__sub-nav a {
 		color: #fff;
 	}
 }
 
-header .nav__sub-nav .columns {
+.header .nav__sub-nav .columns {
 	padding: 0px;
 	padding: calculate-rem(0) rem;
 }
 
-header .nav__sub-nav .top-bar,
-header .nav__sub-nav .top-bar ul {
+.header .nav__sub-nav .top-bar,
+.header .nav__sub-nav .top-bar ul {
 	background-color: transparent;
 }
 
-header .nav__sub-nav .top-bar {
+.header .nav__sub-nav .top-bar {
 	padding: 0px;
 	padding: calculate-rem(0) rem;
 }
