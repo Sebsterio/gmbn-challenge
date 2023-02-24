@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 import "src/styles/main-original.css";
 
 import { PageHeader } from "src/components/PageHeader";
+import { SearchBar } from "src/components/SearchBar";
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<PageHeader />
 
 				<div style={{ flex: 1, overflowY: "auto" }}>
+					<SearchBar />
 					<Component {...pageProps} />;
 				</div>
 			</div>
