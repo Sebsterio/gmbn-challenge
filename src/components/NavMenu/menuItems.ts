@@ -65,4 +65,26 @@ export const menuItems: ItemProps[] = [
 			},
 		],
 	},
+	{
+		href: "/",
+		label: "TEMP ITEM",
+		subItems: [
+			{
+				href: "/",
+				label: "Extra items to demonstrate...",
+			},
+			{
+				href: "/",
+				label: "...overflow-y...",
+			},
+			{
+				href: "/",
+				label: '...and "fixed" position...',
+			},
+			{
+				href: "/",
+				label: "...of nav menu.",
+			},
+		],
+	},
 ];
