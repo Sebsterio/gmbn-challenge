@@ -11,12 +11,8 @@ export const MenuItem: React.FunctionComponent<ItemProps> = ({
 		key={href}
 		className={makeClassName(
 			"dropdown__list",
-			isHome && "dropdown__list--home",
-			subItems &&
-				"dropdown__list dropdown__list--submenu is-dropdown-submenu-parent opens-right"
+			isHome && "dropdown__list--home"
 		)}
-		role="menuitem"
-		// aria-haspopup="true"
 	>
 		<a
 			className={makeClassName(
@@ -30,21 +26,15 @@ export const MenuItem: React.FunctionComponent<ItemProps> = ({
 
 		{subItems && (
 			<ul
-				className="menu dropdown__list__submenu is-dropdown-submenu submenu first-sub vertical"
+				className="dropdown menu"
 				data-submenu
 				role="menu"
+				style={{
+					paddingLeft: 20,
+				}}
 			>
-				{subItems?.map(({ href, label }) => (
-					<li
-						key={href}
-						className="dropdown__list__submenulist is-submenu-item is-dropdown-submenu-item"
-						role="menuitem"
-						// aria-haspopup="true"
-					>
-						<a className="dropdown__list__submenulist__item" {...{ href }}>
-							{label}
-						</a>
-					</li>
+				{subItems?.map((props) => (
+					<MenuItem key={props.href} {...props} />
 				))}
 			</ul>
 		)}
