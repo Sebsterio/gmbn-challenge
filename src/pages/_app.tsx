@@ -10,8 +10,16 @@ import { SearchBar } from "src/components/SearchBar";
 
 export default function App({ Component, pageProps }: AppProps) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+	const toggleMenu = () => {
+		setIsSearchOpen(false);
+		setIsMenuOpen(!isMenuOpen);
+	};
+	const toggleSearch = () => {
+		setIsMenuOpen(false);
+		setIsSearchOpen(!isSearchOpen);
+	};
 
 	return (
 		<div id="container">
@@ -23,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
 					flexWrap: "nowrap",
 				}}
 			>
-				<PageHeader {...{ isMenuOpen, toggleMenu }} />
+				<PageHeader {...{ isMenuOpen, toggleMenu, toggleSearch }} />
 
 				<div
 					style={{
@@ -31,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
 						overflowY: "auto",
 					}}
 				>
-					<SearchBar />
+					{isSearchOpen && <SearchBar />}
 					{isMenuOpen && <NavMenu />}
 					<Component {...pageProps} />;
 				</div>
