@@ -21,11 +21,6 @@ export const NavMenu: React.FunctionComponent = () => {
 							</div>
 						</div>
 					</div>
-					<div className="columns shrink toggle-search">
-						<a data-search-toggle>
-							<i className="fa fa-search" />
-						</a>
-					</div>
 				</div>
 			</div>
 		</div>

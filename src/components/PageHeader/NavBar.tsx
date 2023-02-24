@@ -3,31 +3,24 @@ import styles from "./NavBar.module.scss";
 type Props = {
 	isMenuOpen: boolean;
 	toggleMenu: () => void;
+	toggleSearch: () => void;
 };
 
 export const NavBar: React.FunctionComponent<Props> = ({
 	isMenuOpen,
 	toggleMenu,
+	toggleSearch,
 }) => {
 	return (
 		<div className="row">
-			<div
-				className="columns title-bar"
-				data-responsive-toggle="gcn-menu"
-				data-hide-for="large"
-				style={{ display: "block" }}
-			>
-				<button
-					className={styles["menu-button"]}
-					type="button"
-					data-toggle="gcn-menu"
-					onClick={toggleMenu}
-				>
+			<div className="columns title-bar" style={{ display: "block" }}>
+				<button className={styles["menu-button"]} onClick={toggleMenu}>
 					<span
 						className={isMenuOpen ? styles["back-icon"] : styles["menu-icon"]}
 					/>
 				</button>
 			</div>
+
 			<div className="columns shrink social-links--header-m">
 				<ul className="social-links">
 					<li>
@@ -76,6 +69,15 @@ export const NavBar: React.FunctionComponent<Props> = ({
 						</a>
 					</li>
 				</ul>
+			</div>
+
+			<div
+				className="columns title-bar"
+				style={{ display: "block", textAlign: "right" }}
+			>
+				<button className={styles["menu-button"]} onClick={toggleSearch}>
+					<i className="fa fa-search" style={{ color: "white" }} />
+				</button>
 			</div>
 		</div>
 	);
