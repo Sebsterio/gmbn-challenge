@@ -31,7 +31,9 @@ export default function App({ Component, pageProps }: AppProps) {
 					flexWrap: "nowrap",
 				}}
 			>
-				<PageHeader {...{ isMenuOpen, toggleMenu, toggleSearch }} />
+				<PageHeader
+					{...{ isMenuOpen, toggleMenu, isSearchOpen, toggleSearch }}
+				/>
 
 				<div
 					style={{

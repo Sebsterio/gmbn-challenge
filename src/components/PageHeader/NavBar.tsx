@@ -2,12 +2,14 @@ import styles from "./NavBar.module.scss";
 
 type Props = {
 	isMenuOpen: boolean;
+	isSearchOpen: boolean;
 	toggleMenu: () => void;
 	toggleSearch: () => void;
 };
 
 export const NavBar: React.FunctionComponent<Props> = ({
 	isMenuOpen,
+	isSearchOpen,
 	toggleMenu,
 	toggleSearch,
 }) => {
@@ -76,7 +78,11 @@ export const NavBar: React.FunctionComponent<Props> = ({
 				style={{ display: "block", textAlign: "right" }}
 			>
 				<button className={styles["menu-button"]} onClick={toggleSearch}>
-					<i className="fa fa-search" style={{ color: "white" }} />
+					{isSearchOpen ? (
+						<span className={styles["up-icon"]} />
+					) : (
+						<i className="fa fa-search" style={{ color: "white" }} />
+					)}
 				</button>
 			</div>
 		</div>
