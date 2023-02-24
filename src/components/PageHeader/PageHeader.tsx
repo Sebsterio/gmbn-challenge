@@ -1,23 +1,13 @@
 import { Banner } from "./Banner";
-import { NavBar } from "./NavBar";
+import { NavBar, NavBarProps } from "./NavBar";
 
-type Props = {
-	isMenuOpen: boolean;
-	isSearchOpen: boolean;
-	toggleMenu: () => void;
-	toggleSearch: () => void;
-};
+type Props = NavBarProps;
 
-export const PageHeader: React.FunctionComponent<Props> = ({
-	isMenuOpen,
-	isSearchOpen,
-	toggleMenu,
-	toggleSearch,
-}) => {
+export const PageHeader: React.FunctionComponent<Props> = (props) => {
 	return (
 		<header className="header">
 			<Banner />
-			<NavBar {...{ isMenuOpen, toggleMenu, isSearchOpen, toggleSearch }} />
+			<NavBar {...props} />
 		</header>
 	);
 };
