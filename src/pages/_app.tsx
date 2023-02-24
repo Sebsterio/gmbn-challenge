@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
 					}}
 				>
 					<SearchBar />
-					<NavMenu {...{ isMenuOpen }} />
+					{isMenuOpen && <NavMenu />}
 					<Component {...pageProps} />;
 				</div>
 			</div>

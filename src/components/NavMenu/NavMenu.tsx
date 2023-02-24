@@ -1,24 +1,13 @@
 import { menuItems } from "./menuItems";
 import { MenuItem } from "./MenuItem";
 
-type Props = {
-	isMenuOpen: boolean;
-};
-
-export const NavMenu: React.FunctionComponent<Props> = ({
-	isMenuOpen,
-	// setIsMenuOpen,
-}) => {
+export const NavMenu: React.FunctionComponent = () => {
 	return (
-		<div className="header">
+		<div className="header" /* temp workaround to preserve original styles */>
 			<div className="nav__sub-nav">
 				<div className="row align-middle">
 					<div className="columns">
-						<div
-							className="top-bar"
-							id="gcn-menu"
-							style={{ display: isMenuOpen ? "flex" : "none" }}
-						>
+						<div className="top-bar" id="gcn-menu" style={{ display: "flex" }}>
 							<div className="top-bar-left">
 								<ul
 									className="dropdown menu"
