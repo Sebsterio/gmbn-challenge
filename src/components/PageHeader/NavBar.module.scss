@@ -19,20 +19,20 @@
 	box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
 }
 
-.back-icon {
+@mixin arrow-icon {
 	position: relative;
 	border: solid white;
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 3px;
+}
+
+.back-icon {
+	@include arrow-icon;
 	transform: rotate(135deg);
 }
 
 .up-icon {
-	position: relative;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 3px;
+	@include arrow-icon;
 	transform: rotate(225deg);
 }
