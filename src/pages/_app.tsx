@@ -38,12 +38,34 @@ export default function App({ Component, pageProps }: AppProps) {
 				<div
 					style={{
 						flex: 1,
-						overflowY: "auto",
+						position: "relative",
 					}}
 				>
-					{isSearchOpen && <SearchBar />}
-					{isMenuOpen && <NavMenu />}
-					<Component {...pageProps} />;
+					<div
+						style={{
+							position: "absolute",
+							top: 0,
+							width: "100%",
+							maxHeight: "100%",
+							overflowY: "auto",
+						}}
+					>
+						<Component {...pageProps} />;
+					</div>
+
+					<div
+						style={{
+							position: "absolute",
+							zIndex: 200,
+							top: 0,
+							width: "100%",
+							maxHeight: "100%",
+							overflowY: "auto",
+						}}
+					>
+						{isSearchOpen && <SearchBar />}
+						{isMenuOpen && <NavMenu />}
+					</div>
 				</div>
 			</div>
 		</div>
