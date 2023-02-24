@@ -1,12 +1,18 @@
 import type { AppProps } from "next/app";
+import { useState } from "react";
 
 // fallback styles for legacy elements
 import "src/styles/main-original.css";
 
 import { PageHeader } from "src/components/PageHeader";
+import { NavMenu } from "src/components/NavMenu";
 import { SearchBar } from "src/components/SearchBar";
 
 export default function App({ Component, pageProps }: AppProps) {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
 	return (
 		<div id="container">
 			<div
@@ -17,10 +23,16 @@ export default function App({ Component, pageProps }: AppProps) {
 					flexWrap: "nowrap",
 				}}
 			>
-				<PageHeader />
+				<PageHeader {...{ isMenuOpen, toggleMenu }} />
 
-				<div style={{ flex: 1, overflowY: "auto" }}>
+				<div
+					style={{
+						flex: 1,
+						overflowY: "auto",
+					}}
+				>
 					<SearchBar />
+					<NavMenu {...{ isMenuOpen }} />
 					<Component {...pageProps} />;
 				</div>
 			</div>
