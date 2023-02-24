@@ -20,7 +20,7 @@ export default function Home() {
 									frameBorder={0}
 									allowFullScreen
 									data-gtm-yt-inspected-6336389_21="true"
-									id={620296037}
+									id="620296037"
 									data-gtm-yt-inspected-6336389_22="true"
 									data-gtm-yt-inspected-10="true"
 									title="Gearbox Belt-Drive DH Bikes On The World Cup Circuit?! | GMBN Tech Show 268"
@@ -92,7 +92,7 @@ export default function Home() {
 										</div>
 										<h6 className="video-item__date">20th February 2023</h6>
 										<h4 className="video-item__title">
-											I'm Getting Severe Wrist Ache!? | #AskGMBNTech
+											{"I'm Getting Severe Wrist Ache!? | #AskGMBNTech"}
 										</h4>
 									</a>
 								</div>
@@ -189,8 +189,9 @@ export default function Home() {
 										</div>
 										<h6 className="video-item__date">18th February 2023</h6>
 										<h4 className="video-item__title">
-											Mountain Bike Handlebars Explained! | What's Right For
-											You?
+											{
+												"Mountain Bike Handlebars Explained! | What's Right For You?"
+											}
 										</h4>
 									</a>
 								</div>
@@ -427,7 +428,7 @@ export default function Home() {
 										</div>
 										<h6 className="video-item__date">11th February 2023</h6>
 										<h4 className="video-item__title">
-											Motocross Vs Mountain Biking! What's Harder?
+											{"Motocross Vs Mountain Biking! What's Harder?"}
 										</h4>
 									</a>
 								</div>

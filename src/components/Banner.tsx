@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 export const Banner: React.FunctionComponent = () => {
 	return (
 		<div className="row align-middle">
 			<div className="small-3 medium-4 columns">
-				<a className="navbar-brand" href="/">
+				<Link className="navbar-brand" href="/">
 					<img className="mainLogoMobile" src="/imgs/gmbnLogo-text.svg" />
 					<img className="mainLogoDesktop" src="/imgs/gmbnLogo.svg" />
-				</a>
+				</Link>
 			</div>
 			<div className="small-9 medium-8 columns">
 				<div className="prim-nav">
