@@ -1,10 +1,11 @@
 import type { AppProps } from "next/app";
 import { useState } from "react";
 
-// fallback styles for legacy elements
-import "src/styles/main-original.css";
+import "src/styles/main-original.css"; // fallback styles for legacy elements
+import styles from "src/styles/app.module.scss";
 
-import { PageHeader } from "src/components/PageHeader";
+import { Banner } from "src/components/Banner";
+import { NavBar } from "src/components/NavBar";
 import { NavMenu } from "src/components/NavMenu";
 import { SearchBar } from "src/components/SearchBar";
 
@@ -23,49 +24,23 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	return (
 		<div id="container">
-			<div
-				style={{
-					height: "100vh",
-					display: "flex",
-					flexFlow: "column",
-					flexWrap: "nowrap",
-				}}
-			>
-				<PageHeader
-					{...{ isMenuOpen, toggleMenu, isSearchOpen, toggleSearch }}
-				/>
-
-				<div
-					style={{
-						flex: 1,
-						position: "relative",
-					}}
+			<div className={styles.page}>
+				<header
+					className="header" /* temp workaround to preserve original styles */
 				>
-					<div
-						style={{
-							position: "absolute",
-							top: 0,
-							width: "100%",
-							maxHeight: "100%",
-							overflowY: "auto",
-						}}
-					>
-						<Component {...pageProps} />;
-					</div>
+					<Banner />
+					<NavBar {...{ isMenuOpen, isSearchOpen, toggleMenu, toggleSearch }} />
+				</header>
 
-					<div
-						style={{
-							position: "absolute",
-							zIndex: 200,
-							top: 0,
-							width: "100%",
-							maxHeight: "100%",
-							overflowY: "auto",
-						}}
-					>
+				<div className={styles.mainWrapper}>
+					<main className={styles.main}>
+						<Component {...pageProps} />{" "}
+					</main>
+
+					<nav className={styles.nav}>
 						{isSearchOpen && <SearchBar />}
 						{isMenuOpen && <NavMenu />}
-					</div>
+					</nav>
 				</div>
 			</div>
 		</div>
