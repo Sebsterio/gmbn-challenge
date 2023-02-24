@@ -1,6 +1,4 @@
 import Head from "next/head";
-// import { Inter } from "next/font/google";
-// import styles from '@src/styles/Home.module.css'
 
 export default function Home() {
 	return (
@@ -12,475 +10,472 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
-				<div className="video-hero">
-					<div className="row">
-						<div className="small-12 columns">
-							<div className="video-hero__player">
-								<div className="iframe-container">
-									<iframe
-										src="https://www.youtube.com/embed/aPHvr6Yrc2g?html5=1&enablejsapi=1&origin=https%3A%2F%2Fwww.gmbn.com"
-										frameBorder={0}
-										allowFullScreen
-										data-gtm-yt-inspected-6336389_21="true"
-										id={620296037}
-										data-gtm-yt-inspected-6336389_22="true"
-										data-gtm-yt-inspected-10="true"
-										title="Gearbox Belt-Drive DH Bikes On The World Cup Circuit?! | GMBN Tech Show 268"
+			<div className="video-hero">
+				<div className="row">
+					<div className="small-12 columns">
+						<div className="video-hero__player">
+							<div className="iframe-container">
+								<iframe
+									src="https://www.youtube.com/embed/aPHvr6Yrc2g?html5=1&enablejsapi=1&origin=https%3A%2F%2Fwww.gmbn.com"
+									frameBorder={0}
+									allowFullScreen
+									data-gtm-yt-inspected-6336389_21="true"
+									id={620296037}
+									data-gtm-yt-inspected-6336389_22="true"
+									data-gtm-yt-inspected-10="true"
+									title="Gearbox Belt-Drive DH Bikes On The World Cup Circuit?! | GMBN Tech Show 268"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="row">
+				<div className="small-12 columns">
+					<h3>Latest videos</h3>
+				</div>
+			</div>
+			<div className="row">
+				<div className="small-12 columns">
+					<div className="video-grid">
+						<div className="row" data-append-target>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/gearbox-belt-drive-dh-bikes-on-the-world-cup-circuit-gmbn-tech-show-268"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/aPHvr6Yrc2g/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">22nd February 2023</h6>
+										<h4 className="video-item__title">
+											Gearbox Belt-Drive DH Bikes On The World Cup Circuit?! |
+											GMBN Tech Show 268
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/what-is-the-coolest-bike-brand-we-asked-you"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/jR6-zpTtnIs/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">21st February 2023</h6>
+										<h4 className="video-item__title">
+											What Is The Coolest Bike Brand? | We Asked YOU!
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/im-getting-severe-wrist-ache-askgmbntech"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/aMuQaIIzoT4/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">20th February 2023</h6>
+										<h4 className="video-item__title">
+											I'm Getting Severe Wrist Ache!? | #AskGMBNTech
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/full-suspension-mountain-bike-setup-tuning-how-to-guide"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/GUQ9hfXoE7w/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">20th February 2023</h6>
+										<h4 className="video-item__title">
+											Full Suspension Mountain Bike Setup &amp; Tuning | How To
+											Guide
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/mountain-biker-vs-trail-runner-who-is-the-fastest-off-road-racer"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/WSLOSV2ekoY/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">19th February 2023</h6>
+										<h4 className="video-item__title">
+											Mountain Biker VS Trail Runner | Who Is The Fastest
+											Off-Road Racer!?
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/is-a-smaller-bike-more-fun"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/Yrj6RXcQwyA/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">19th February 2023</h6>
+										<h4 className="video-item__title">
+											Is A Smaller Bike More Fun?
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/built-not-bought-is-a-diy-mtb-a-terrible-idea"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/SXULK5wzxCE/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">18th February 2023</h6>
+										<h4 className="video-item__title">
+											Built Not Bought | Is A DIY MTB A TERRIBLE Idea!?
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/mountain-bike-handlebars-explained-whats-right-for-you"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/bv4DBoi8KEA/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">18th February 2023</h6>
+										<h4 className="video-item__title">
+											Mountain Bike Handlebars Explained! | What's Right For
+											You?
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/buy-one-get-one-free-mountain-bike-dirt-shed-show-414"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/p9iZIzViC3I/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">17th February 2023</h6>
+										<h4 className="video-item__title">
+											Buy One Get One Free...Mountain Bike?! | Dirt Shed Show
+											414
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container with-ad">
+									{/* GMBN responsive ad */}
+									<ins
+										className="adsbygoogle"
+										style={{ display: "block" }}
+										data-ad-client="ca-pub-2148199421814586"
+										data-ad-slot={1432600139}
+										data-ad-format="auto"
 									/>
 								</div>
 							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/bikepacking-through-the-incredible-welsh-elan-valleys"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/zYo-KH7P8qU/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">16th February 2023</h6>
+										<h4 className="video-item__title">
+											Bikepacking Through The Incredible Welsh Elan Valleys!
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/11-things-you-are-doing-wrong-mtb-jumps"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/tLThxOkMpUA/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">15th February 2023</h6>
+										<h4 className="video-item__title">
+											11 Things You Are Doing Wrong! | MTB Jumps
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/is-headset-cable-routing-overrated-gmbn-tech-show-267"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/-FkdaYLXRo0/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">15th February 2023</h6>
+										<h4 className="video-item__title">
+											Is Headset Cable Routing Overrated?! | GMBN Tech Show 267
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/the-most-important-game-changing-mountain-bikes"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/aOeV5byK7vc/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">14th February 2023</h6>
+										<h4 className="video-item__title">
+											The Most Important GAME-CHANGING Mountain Bikes!
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/can-i-file-down-my-mountain-bike-stem-askgmbntech"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/_CR4SAnrI2U/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">13th February 2023</h6>
+										<h4 className="video-item__title">
+											Can I File Down My Mountain Bike Stem? | #AskGMBNTech
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/bicycle-repair-mistakes-to-avoid"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/nv63JiAehLQ/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">13th February 2023</h6>
+										<h4 className="video-item__title">
+											Bicycle Repair Mistakes To Avoid!
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/are-you-stupid-or-are-you-fast-gmbn-vs-gmbn-tech-presenter-challenge"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/ihvUaF70WRM/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">12th February 2023</h6>
+										<h4 className="video-item__title">
+											Are You Stupid Or Are You Fast? | GMBN Vs GMBN Tech
+											Presenter Challenge!
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/are-your-wheels-strong-enough-for-you-choosing-the-right-mtb-wheelset"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/k-hP53-y4NI/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">12th February 2023</h6>
+										<h4 className="video-item__title">
+											Are Your Wheels Strong Enough For You? | Choosing The
+											Right MTB Wheelset
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/mtb-chain-lube-101-what-is-wet-dry-and-all-weather-lubricant"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/j22-mDaN0cw/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">11th February 2023</h6>
+										<h4 className="video-item__title">
+											MTB Chain Lube 101: What Is Wet, Dry and All-Weather
+											Lubricant?
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container with-ad">
+									{/* GMBN responsive ad */}
+									<ins
+										className="adsbygoogle"
+										style={{ display: "block" }}
+										data-ad-client="ca-pub-2148199421814586"
+										data-ad-slot={1432600139}
+										data-ad-format="auto"
+									/>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/motocross-vs-mountain-biking-whats-harder"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/VAiYUxjd-do/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">11th February 2023</h6>
+										<h4 className="video-item__title">
+											Motocross Vs Mountain Biking! What's Harder?
+										</h4>
+									</a>
+								</div>
+							</div>
+							<div className="small-12 medium-6 large-4 columns">
+								<div className="video-item-container">
+									<a
+										className="video-item"
+										href="/video/is-the-bike-industry-broken-dirt-shed-show-413"
+									>
+										<div className="video-item__thumbnail__crop">
+											<img
+												className="video-item__thumbnail"
+												src="https://img.youtube.com/vi/-d53qkcSMaw/hqdefault.jpg"
+											/>
+										</div>
+										<h6 className="video-item__date">10th February 2023</h6>
+										<h4 className="video-item__title">
+											Is The Bike Industry Broken?! | Dirt Shed Show 413
+										</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div className="row">
+							<button
+								className="btn-theme__btn btn-theme__btn--center"
+								data-show-more
+								data-page={1}
+							>
+								Show more
+							</button>
 						</div>
 					</div>
 				</div>
-				<div className="row">
-					<div className="small-12 columns">
-						<h3>Latest videos</h3>
-					</div>
+			</div>
+			<div className="data-popup" data-popup style={{ display: "none" }}>
+				<a
+					href="https://shop.gmbn.com/?utm_source=Global-Mountain-Bike-Network-Site&utm_medium=Referral&utm_campaign=GMBN-Fan-Site-Banner"
+					target="_blank"
+				>
+					<img className="popupMobile" src="/imgs/popup-mobile.png" />
+					<img className="popupDesktop" src="/imgs/popup.png" />
+				</a>
+				<div className="cancel" data-popup-toggle>
+					<a className="popup__cancel">X</a>
 				</div>
-				<div className="row">
-					<div className="small-12 columns">
-						<div className="video-grid">
-							<div className="row" data-append-target>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/gearbox-belt-drive-dh-bikes-on-the-world-cup-circuit-gmbn-tech-show-268"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/aPHvr6Yrc2g/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">22nd February 2023</h6>
-											<h4 className="video-item__title">
-												Gearbox Belt-Drive DH Bikes On The World Cup Circuit?! |
-												GMBN Tech Show 268
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/what-is-the-coolest-bike-brand-we-asked-you"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/jR6-zpTtnIs/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">21st February 2023</h6>
-											<h4 className="video-item__title">
-												What Is The Coolest Bike Brand? | We Asked YOU!
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/im-getting-severe-wrist-ache-askgmbntech"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/aMuQaIIzoT4/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">20th February 2023</h6>
-											<h4 className="video-item__title">
-												I'm Getting Severe Wrist Ache!? | #AskGMBNTech
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/full-suspension-mountain-bike-setup-tuning-how-to-guide"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/GUQ9hfXoE7w/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">20th February 2023</h6>
-											<h4 className="video-item__title">
-												Full Suspension Mountain Bike Setup &amp; Tuning | How
-												To Guide
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/mountain-biker-vs-trail-runner-who-is-the-fastest-off-road-racer"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/WSLOSV2ekoY/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">19th February 2023</h6>
-											<h4 className="video-item__title">
-												Mountain Biker VS Trail Runner | Who Is The Fastest
-												Off-Road Racer!?
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/is-a-smaller-bike-more-fun"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/Yrj6RXcQwyA/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">19th February 2023</h6>
-											<h4 className="video-item__title">
-												Is A Smaller Bike More Fun?
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/built-not-bought-is-a-diy-mtb-a-terrible-idea"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/SXULK5wzxCE/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">18th February 2023</h6>
-											<h4 className="video-item__title">
-												Built Not Bought | Is A DIY MTB A TERRIBLE Idea!?
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/mountain-bike-handlebars-explained-whats-right-for-you"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/bv4DBoi8KEA/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">18th February 2023</h6>
-											<h4 className="video-item__title">
-												Mountain Bike Handlebars Explained! | What's Right For
-												You?
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/buy-one-get-one-free-mountain-bike-dirt-shed-show-414"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/p9iZIzViC3I/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">17th February 2023</h6>
-											<h4 className="video-item__title">
-												Buy One Get One Free...Mountain Bike?! | Dirt Shed Show
-												414
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container with-ad">
-										{/* GMBN responsive ad */}
-										<ins
-											className="adsbygoogle"
-											style={{ display: "block" }}
-											data-ad-client="ca-pub-2148199421814586"
-											data-ad-slot={1432600139}
-											data-ad-format="auto"
-										/>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/bikepacking-through-the-incredible-welsh-elan-valleys"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/zYo-KH7P8qU/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">16th February 2023</h6>
-											<h4 className="video-item__title">
-												Bikepacking Through The Incredible Welsh Elan Valleys!
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/11-things-you-are-doing-wrong-mtb-jumps"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/tLThxOkMpUA/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">15th February 2023</h6>
-											<h4 className="video-item__title">
-												11 Things You Are Doing Wrong! | MTB Jumps
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/is-headset-cable-routing-overrated-gmbn-tech-show-267"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/-FkdaYLXRo0/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">15th February 2023</h6>
-											<h4 className="video-item__title">
-												Is Headset Cable Routing Overrated?! | GMBN Tech Show
-												267
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/the-most-important-game-changing-mountain-bikes"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/aOeV5byK7vc/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">14th February 2023</h6>
-											<h4 className="video-item__title">
-												The Most Important GAME-CHANGING Mountain Bikes!
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/can-i-file-down-my-mountain-bike-stem-askgmbntech"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/_CR4SAnrI2U/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">13th February 2023</h6>
-											<h4 className="video-item__title">
-												Can I File Down My Mountain Bike Stem? | #AskGMBNTech
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/bicycle-repair-mistakes-to-avoid"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/nv63JiAehLQ/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">13th February 2023</h6>
-											<h4 className="video-item__title">
-												Bicycle Repair Mistakes To Avoid!
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/are-you-stupid-or-are-you-fast-gmbn-vs-gmbn-tech-presenter-challenge"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/ihvUaF70WRM/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">12th February 2023</h6>
-											<h4 className="video-item__title">
-												Are You Stupid Or Are You Fast? | GMBN Vs GMBN Tech
-												Presenter Challenge!
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/are-your-wheels-strong-enough-for-you-choosing-the-right-mtb-wheelset"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/k-hP53-y4NI/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">12th February 2023</h6>
-											<h4 className="video-item__title">
-												Are Your Wheels Strong Enough For You? | Choosing The
-												Right MTB Wheelset
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/mtb-chain-lube-101-what-is-wet-dry-and-all-weather-lubricant"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/j22-mDaN0cw/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">11th February 2023</h6>
-											<h4 className="video-item__title">
-												MTB Chain Lube 101: What Is Wet, Dry and All-Weather
-												Lubricant?
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container with-ad">
-										{/* GMBN responsive ad */}
-										<ins
-											className="adsbygoogle"
-											style={{ display: "block" }}
-											data-ad-client="ca-pub-2148199421814586"
-											data-ad-slot={1432600139}
-											data-ad-format="auto"
-										/>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/motocross-vs-mountain-biking-whats-harder"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/VAiYUxjd-do/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">11th February 2023</h6>
-											<h4 className="video-item__title">
-												Motocross Vs Mountain Biking! What's Harder?
-											</h4>
-										</a>
-									</div>
-								</div>
-								<div className="small-12 medium-6 large-4 columns">
-									<div className="video-item-container">
-										<a
-											className="video-item"
-											href="/video/is-the-bike-industry-broken-dirt-shed-show-413"
-										>
-											<div className="video-item__thumbnail__crop">
-												<img
-													className="video-item__thumbnail"
-													src="https://img.youtube.com/vi/-d53qkcSMaw/hqdefault.jpg"
-												/>
-											</div>
-											<h6 className="video-item__date">10th February 2023</h6>
-											<h4 className="video-item__title">
-												Is The Bike Industry Broken?! | Dirt Shed Show 413
-											</h4>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div className="row">
-								<button
-									className="btn-theme__btn btn-theme__btn--center"
-									data-show-more
-									data-page={1}
-								>
-									Show more
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="data-popup" data-popup style={{ display: "none" }}>
-					<a
-						href="https://shop.gmbn.com/?utm_source=Global-Mountain-Bike-Network-Site&utm_medium=Referral&utm_campaign=GMBN-Fan-Site-Banner"
-						target="_blank"
-					>
-						<img className="popupMobile" src="/imgs/popup-mobile.png" />
-						<img className="popupDesktop" src="/imgs/popup.png" />
-					</a>
-					<div className="cancel" data-popup-toggle>
-						<a className="popup__cancel">X</a>
-					</div>
-				</div>
-			</main>
+			</div>
 		</>
 	);
 }
